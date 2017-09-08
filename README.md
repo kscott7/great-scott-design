@@ -1,1 +1,1 @@
-# great-scott-design
+# great-scott-design :)
