@@ -1,1 +1,1 @@
-# great-scott-design
+# Great Scott Design
