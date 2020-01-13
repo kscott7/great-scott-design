@@ -1,6 +1,7 @@
 ---
 title: Great Scott Design
 timezone: UTC
+
 collections:
   posts:
     title: Posts
@@ -8,9 +9,16 @@ collections:
   uploads:
     title: Uploads
     output: true
+
 baseurl: "/"
+
 sass:
   sass_dir: _scss
   style: compressed
+
 include:
 - _pages
+
+url: "https://greatscott.design"
+plugins:
+  - jekyll-sitemap
