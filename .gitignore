@@ -66,16 +66,3 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
-
-
-### Windows ###
-Thumbs.db
-ehthumbs.db
-ehthumbs_vista.db
-Desktop.ini
-$RECYCLE.BIN/
-*.cab
-*.msi
-*.msm
-*.msp
-*.lnk
