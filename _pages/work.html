@@ -1,0 +1,23 @@
+---
+title: Work | Kieron Scott | Digital Product Designer, Glasgow
+permalink: "/work/"
+layout: default
+---
+
+<main>
+  <section>
+    <h1>Work</h1>
+    <p>A collection of my work as a designer.</p>
+  </section>
+  <section>
+    <ul>
+      {% for post in site.posts %}
+      <li>
+        <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+        <span>{{ post.client }}, {{ post.date | date: "%B %Y" }}</span>
+
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+</main>

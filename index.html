@@ -4,4 +4,29 @@ description: A designer with a passion for problem solving, process and building
 layout: default
 ---
 
-<h1>Hello world!!!</h1>
+
+<main>
+  <section>
+    <h1>A designer with a passion for problem solving, process and building an open inclusive web.</h1>
+    <p>Currently working as a Senior UI Designer at <a href="https://careers.virginmoney.com/" target="_blank" rel="noopener">Virgin Money</a>.</p>
+  </section>
+
+  <section>
+    <h2>Latest work</h2>
+    <ul>
+      {% for post in site.posts limit: 3 %}
+      <li>
+        <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+        <span>{{ post.client }}, {{ post.date | date: "%B %Y" }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+    <a href="/work">See more work</a>
+  </section>
+
+  <section>
+    <h2>Get in touch</h2>
+    <p>Sed posuere consectetur est at lobortis. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+    <a href="mailto:hello@greatscott.design">Get in touch!</a>
+  </section>
+</main>
