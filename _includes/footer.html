@@ -1,13 +1,16 @@
-<hr />
-<footer>
-  <p>Designed by Me in Glasgow</p>
-  <ul>
+<footer class="wrapper">
+  <p>&copy; {{ site.time | date: '%Y' }} Kieron Scott</p>
+  <!-- <ul>
     <li><a href="/things/">Things</a></li>
     <li><a href="/now/">Now</a></li>
-  </ul>
-  <ul>
-    <li><a href="https://github.com/kscott7" target="_blank" rel="noopener">Github</a></li>
-    <li><a href="https://jsfiddle.net/user/kikiscott7/fiddles/" target="_blank" rel="noopener">JSFiddle</a></li>
-    <li><a href="https://www.linkedin.com/in/kieron-scott-36a74259/" target="_blank" rel="noopener">LinkedIn</a></li>
+  </ul> -->
+  <ul class="social-list">
+    {% for item in site.data.navigation.social %}
+      <li>
+        <a href="{{ item.url }}" target="_blank" rel="noopener" title="{{ item.title }}">
+          <img src="{{ item.image }}" alt=" " />
+        </a>
+      </li>
+    {% endfor %}
   </ul>
 </footer>

@@ -5,15 +5,14 @@ layout: default
 ---
 
 
-<main>
+<main class="wrapper">
   <section>
-    <h1>A designer with a passion for problem solving, process and building an open inclusive web.</h1>
-    <p>Currently working as a Senior UI Designer at <a href="https://careers.virginmoney.com/" target="_blank" rel="noopener">Virgin Money</a>.</p>
+    <p class="big-text"><strong>Hey, I'm Kieron.</strong> A designer with a passion for problem solving, process and building an open inclusive web. I currently work as a Senior UI Designer at Virgin Money.</p>
   </section>
 
   <section>
-    <h2>Latest work</h2>
-    <ul>
+    <h2>Featured projects</h2>
+    <ul class="work-list">
       {% for post in site.posts limit: 3 %}
       <li>
         <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
@@ -21,12 +20,11 @@ layout: default
       </li>
       {% endfor %}
     </ul>
-    <a href="/work">See more work</a>
   </section>
 
   <section>
     <h2>Get in touch</h2>
     <p>Sed posuere consectetur est at lobortis. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-    <a href="mailto:hello@greatscott.design">Get in touch!</a>
+    <h3><a class="button" href="mailto:hello@greatscott.design">hello@greatscott.design</a></h3>
   </section>
 </main>

@@ -1,10 +1,15 @@
-<header>
-  <h1><a href="/">Kieron Scott</a></h1>
+<header class="wrapper navigation">
+  <a class="brand" href="/"><img src="/static/images/logo.svg" alt=" " /></a>
+
   <nav>
     <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/about">About</a></li>
-      <li><a href="/work">Work</a></li>
+      {% for item in site.data.navigation.links %}
+          <li>
+            <a aria-current="{% if item.url == page.url %}true{% endif %}" href="{{ item.url }}">
+              {{ item.title }}
+            </a>
+          </li>
+        {% endfor %}
     </ul>
   </nav>
 </header>

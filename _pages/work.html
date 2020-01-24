@@ -4,13 +4,13 @@ permalink: "/work/"
 layout: default
 ---
 
-<main>
+<main class="wrapper">
   <section>
     <h1>Work</h1>
     <p>A collection of my work as a designer.</p>
   </section>
   <section>
-    <ul>
+    <ul class="work-list">
       {% for post in site.posts %}
       <li>
         <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
