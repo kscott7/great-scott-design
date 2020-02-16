@@ -12,9 +12,12 @@ layout: default
   <section>
     <h2>Books</h2>
     <ul>
-      <li><a href="#" target="_blank" rel="noopener">Book 1</a></li>
-      <li><a href="#" target="_blank" rel="noopener">Book 2</a></li>
-      <li><a href="#" target="_blank" rel="noopener">Book 3</a></li>
+      {% for thing in site.data.things %}
+          <li>
+            <a href="{{ thing.url }}" target="_blank" rel="noopener" title="{{ thing.title }}">
+            </a>
+          </li>
+      {% endfor %}
     </ul>
 
     <h2>Tools</h2>

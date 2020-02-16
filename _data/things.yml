@@ -1,0 +1,39 @@
+books:
+  - title: Book 1
+    url: #
+
+  - title: Book 2
+    url: #
+
+  - title: Book 3
+    url: #
+
+tools:
+  - title: Tool 1
+    url: #
+
+  - title: Tool 2
+    url: #
+
+  - title: Tool 3
+    url: #
+
+articles:
+  - title: Article 1
+    url: #
+
+  - title: Article 2
+    url: #
+
+  - title: Article 3
+    url: #
+
+podcasts:
+  - title: Podcast 1
+    url: #
+
+  - title: Podcast 2
+    url: #
+
+  - title: Podcast 3
+    url: #
