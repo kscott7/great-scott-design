@@ -11,19 +11,25 @@
 /* GLOBAL ____________________*/
 
 *, *:before, *:after {
-	// outline: 1px solid pink;
+	outline: 1px solid pink;
   box-sizing: border-box;
 }
 
 body {
   background-color: $base-light;
   color: $base-dark;
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 18px;
+  line-height: 1.35;
   font-family: $type-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
+  padding: 1em;
   text-rendering: optimizeLegibility;
+
+  @media screen and (min-width: 680px) {
+    font-size: 22px;
+    padding: 0;
+  }
 }
 
 .wrapper {
@@ -32,7 +38,7 @@ body {
 }
 
 section {
-  margin-bottom: 72px;
+  margin-bottom: 2.5em;
 }
 
 ul, dl {
@@ -49,13 +55,13 @@ dd {
   margin: 0;
 
   &:nth-child(3n) {
-    margin-bottom: 24px;
+    margin-bottom: 1.2em;
   }
 }
 
 .work-list {
   li {
-    margin-bottom: 24px;
+    margin-bottom: 1.2em;
   }
 }
 
@@ -79,7 +85,11 @@ dd {
 
 figure {
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 1.5em;
+}
+
+figcaption {
+  font-style: italic;
 }
 
 img {

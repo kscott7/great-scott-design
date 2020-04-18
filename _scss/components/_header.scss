@@ -49,8 +49,11 @@ header {
       background-color: #000;
     }
   }
+  @media screen and (min-width: 680px) {
+    padding-top: 1.5em;
+  }
 }
 
 .wrapper.navigation {
-  margin: 36px auto 72px;
+  margin: 0 auto 3em;
 }
