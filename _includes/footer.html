@@ -1,0 +1,13 @@
+<footer class="wrapper">
+  <p>&copy; {{ site.time | date: '%Y' }} Kieron Scott</p>
+  <!-- <a href="mailto:hello@greatscott.design">hello@greatscott.design</a> -->
+  <ul class="social-list">
+    {% for item in site.data.navigation.social %}
+      <li>
+        <a href="{{ item.url }}" target="_blank" rel="noopener" title="{{ item.title }}">
+          <img src="{{ item.image }}" alt="{{ item.title }}" />
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</footer>

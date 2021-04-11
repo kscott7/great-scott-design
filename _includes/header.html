@@ -1,0 +1,15 @@
+<header class="wrapper navigation">
+  <h1><a class="brand" href="/" title="Home page"><img src="/static/images/logo.svg" alt="Great Scott Design" /></a></h1>
+
+  <nav>
+    <ul>
+      {% for item in site.data.navigation.links %}
+          <li>
+            <a aria-current="{% if item.url == page.url %}true{% endif %}" href="{{ item.url }}">
+              {{ item.title }}
+            </a>
+          </li>
+        {% endfor %}
+    </ul>
+  </nav>
+</header>

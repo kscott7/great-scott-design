@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:700|Spectral:400,700&display=swap');
+
+$type-serif: 'Spectral', serif;
+$type-sans-serif: 'Source Sans Pro', sans-serif;
+
+h1, .h1, h2, .h2, h3, .h3 {
+  font-family: $type-sans-serif;
+  font-weight: 700;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2em;
+  // font-size: 60px;
+  // line-height: 72px;
+  // margin-bottom: 24px;
+}
+
+h2, .h2 {
+  // font-size: 42px;
+  // line-height: 54px;
+  // margin-bottom: 18px;
+}
+
+h3, .h3 {
+  // font-size: 30px;
+  // line-height: 42px;
+  // margin-bottom: 12px;
+}
+
+p, .p {
+  // margin: 0;
+  // margin-bottom: 18px;
+}
+
+.big-text {
+  font-size: 1.5em;
+  // font-size: 42px;
+  // line-height: 54px;
+}
+
+a {
+  color: $link-blue;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:visited {
+    color: $link-blue;
+  }
+}
