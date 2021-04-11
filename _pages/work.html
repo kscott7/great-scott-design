@@ -14,7 +14,7 @@ layout: default
       {% for post in site.posts %}
       <li>
         <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
-        <span>{{ post.client }}, {{ post.date | date: "%B %Y" }}</span>
+        <span>{{ post.client }}, {{ post.date | date: "%Y" }}</span>
 
       </li>
       {% endfor %}

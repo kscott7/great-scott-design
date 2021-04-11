@@ -6,16 +6,16 @@ layout: default
 
 <main class="wrapper">
   <section>
-    <p class="big-text"><strong>Hey, I’m Kieron.</strong> A designer with a passion for problem solving, process and building an open inclusive web. I currently work as a Senior UI Designer at Virgin Money.</p>
+    <p class="big-text"><strong>Hey, I’m Kieron.</strong> A designer with a passion for problem solving, process and building an open inclusive web. I currently work as a Senior UX Designer at Virgin Money.</p>
   </section>
 
   <section>
     <h2>Featured projects</h2>
     <ul class="work-list">
-      {% for post in site.posts limit: 3 %}
+      {% for post in site.posts limit: 4 %}
       <li>
         <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
-        <span>{{ post.client }}, {{ post.date | date: "%B %Y" }}</span>
+        <span>{{ post.client }}, {{ post.date | date: "%Y" }}</span>
       </li>
       {% endfor %}
     </ul>
